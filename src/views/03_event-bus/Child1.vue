@@ -1,23 +1,28 @@
 <template>
-  <div class="cp">
-    <h1>我是曹丕</h1>
+  <div class="son">
+    <h1>我是兄弟组件曹植{{info}}</h1>
   </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted } from "vue";
-import bus from "../../utils/bus";
+//引入bus对象
+import $bus from "../../bus";
+import { onMounted, ref } from "vue";
+
+//接受兄弟组件传递过来的数据
+let info = ref("");
 onMounted(() => {
-  bus.on("sendData", (params) => {
-    console.log(params);
+  //绑定事件sendData
+  $bus.on("sendData", (data: string) => {
+    info.value = data;
   });
 });
 </script>
 
 <style scoped>
-.cp {
-  width: 100%;
-  height: 100px;
-  background: red;
+.son {
+  width: 300px;
+  height: 300px;
+  background: skyblue;
 }
 </style>
