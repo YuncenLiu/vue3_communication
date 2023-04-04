@@ -23,27 +23,23 @@ export default [
     component: () => import('@/views/04_v-model/ModelTest.vue'),
   },
   {
-    path: '/sync_pre',
-    component: () => import('@/views/05_sync/SyncTest.vue'),
-  },
-  {
     path: '/attrs-listeners_pre',
-    component: () => import('@/views/06_attrs-listeners/AttrsListenersTest.vue'),
+    component: () => import('@/views/05_attrs-listeners/AttrsListenersTest.vue'),
   },
   {
     path: '/ref-parent_pre',
-    component: () => import('@/views/07_ref-children-parent/RefChildrenParentTest.vue'),
+    component: () => import('@/views/06_ref-children-parent/RefChildrenParentTest.vue'),
   },
   {
     path: '/provide-inject_pre',
-    component: () => import('@/views/08_provide-inject/ProvideInjectTest.vue'),
+    component: () => import('@/views/07_provide-inject/ProvideInjectTest.vue'),
   },
   {
     path: '/vuex_pre',
-    component: () => import('@/views/09_vuex/VuexTest.vue'),
+    component: () => import('@/views/08_pinia/index.vue'),
   },
    {
     path: '/slot_pre',
-    component: () => import('@/views/10_slot/SlotTest.vue'),
+    component: () => import('@/views/09_slot/SlotTest.vue'),
   },
 ]

@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <h1>$bus全局事件总线</h1>
-  </div>
+  <div></div>
 </template>
 
 <script setup lang="ts">

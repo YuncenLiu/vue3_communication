@@ -1,11 +1,13 @@
 <template>
   <div>
-    <h1>$bus全局事件总线</h1>
+    <h1>Provide与Inject</h1>
   </div>
 </template>
 
 <script setup lang="ts">
+
 </script>
 
 <style scoped>
+
 </style>

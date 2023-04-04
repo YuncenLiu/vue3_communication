@@ -1,6 +1,6 @@
 <template>
   <div>
-     vue3废弃sync属性修饰符
+         <h1>slot</h1>
   </div>
 </template>
 
