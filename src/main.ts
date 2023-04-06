@@ -1,7 +1,6 @@
 // 引入实例化上下文的api方法createApp
 import { createApp } from 'vue'
 // 引入创建pinia的方法
-import { createPinia } from 'pinia'
 // 引入element ui
 import ElementPlus from 'element-plus'
 // 引入element ui的样式
@@ -12,8 +11,8 @@ import App from './App.vue'
 import router from './router'
 // 创建app
 const app = createApp(App)
-// 注册pinia
-app.use(createPinia())
+
+
 app.use(router) // 注册路由器
 app.use(ElementPlus) // 使用element-ui
 // 挂载
