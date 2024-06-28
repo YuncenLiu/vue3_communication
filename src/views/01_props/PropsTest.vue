@@ -10,7 +10,7 @@
 //props:可以实现父子组件通信,props数据还是只读的！！！
 import Child from "./Child.vue";
 import { ref } from "vue";
-let money = ref(10000);
+let money = ref(10001);
 </script>
 
 <style scoped>

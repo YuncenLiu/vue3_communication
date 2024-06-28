@@ -2,7 +2,8 @@
 require("@rushstack/eslint-patch/modern-module-resolution");
 
 module.exports = {
-  "root": true,
+  // 2024-06-28 yun: 开启和关闭 eslint
+  "root": false,
   "extends": [
     "plugin:vue/vue3-essential",
     "eslint:recommended",

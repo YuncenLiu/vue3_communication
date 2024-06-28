@@ -9,11 +9,11 @@
 <script setup lang="ts">
 //利用defineEmits方法返回函数触发自定义事件
 //defineEmits方法不需要引入直接使用
-let $emit = defineEmits(['xxx','click']);
+let $emit = defineEmits(['yun','click']);
 //按钮点击回调
 const handler = () => {
   //第一个参数:事件类型 第二个|三个|N参数即为注入数据
-    $emit('xxx','东风导弹','航母');
+    $emit('yun','东风导弹','航母');
 };
 </script>
 

@@ -15,8 +15,8 @@
       -->
     <Event1 @click="handler2"></Event1>
     <hr>
-    <!-- 绑定自定义事件xxx:实现子组件给父组件传递数据 -->
-    <Event2 @xxx="handler3" @click="handler4"></Event2>
+    <!-- 绑定自定义事件 yun:实现子组件给父组件传递数据 -->
+    <Event2 @yun="handler3" @click="handler4"></Event2>
   </div>
 </template>
 
@@ -26,12 +26,12 @@ import Event1 from './Event1.vue';
 //引入子组件
 import Event2 from './Event2.vue';
 //事件回调--1
-const handler = (event)=>{
+const handler = (event: any)=>{
     //event即为事件对象
     console.log(event);
 }
 //事件回调--2
-const handler1 = (a,b,c,$event)=>{
+const handler1 = (a: any, b: any, c: any, $event: any)=>{
    console.log(a,b,c,$event)
 }
 //事件回调---3
@@ -39,11 +39,11 @@ const handler2 = ()=>{
     console.log(123);
 }
 //事件回调---4
-const handler3 = (param1,param2)=>{
+const handler3 = (param1: any, param2: any)=>{
     console.log(param1,param2);
 }
 //事件回调--5
-const handler4 = (param1,param2)=>{
+const handler4 = (param1: any, param2: any)=>{
      console.log(param1,param2);
 }
 </script>
